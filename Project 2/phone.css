@@ -1,0 +1,120 @@
+/* Responsive for nav and first section  */
+/* @media only screen and (max-width: 480px) {
+    .first-text h1 {
+        font-size: 20px;
+        font-family: 'open sans';
+        font-weight: 350;
+        color: #0c0c0c;
+        text-align: center;
+    }
+
+    .first-text p {
+        font-size: 20px;
+        font-family: 'open sans';
+        font-weight: 200;
+        color: #757575;
+        text-align: center;
+    }
+
+    .first-img img {
+        height: 330px;
+        width: 324px;
+        position: relative;
+    }
+
+    #navbar ul li {
+        display: block;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+
+    }
+} */
+@media only screen and (max-width: 480px) {
+
+    /* Hide the navigation links */
+    .nav-links ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the navigation links when the menu icon is clicked */
+    .nav-links ul.active {
+        display: block;
+    }
+
+    /* Adjust the hamburger menu icon */
+    .nav-links i.fa-bars {
+        display: block;
+    }
+
+    /* Hide the close icon initially */
+    .nav-links i.fa-times {
+        display: none;
+    }
+
+    /* Style the menu icon and close icon */
+    .nav-links i {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    /* Adjust the logo size */
+    #logo img {
+        width: 100px;
+        /* Adjust the width as needed */
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for smaller screens */
+
+    .first-sec {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .first-img img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .first-text h1 {
+        font-size: 2px;
+    }
+
+    .first-text p {
+        font-size: 14px;
+    }
+
+    .text-buttons {
+        display:flex ;
+    }
+
+    .text-buttons .one,
+    .text-buttons .two {
+        margin: 0 0 10px 0;
+    }
+}
